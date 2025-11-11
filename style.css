@@ -1,0 +1,187 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    color:white;
+}
+
+
+h1{
+    margin-top: 22px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+main{
+    display: flex;
+    align-items: center;
+    min-height:100vh;
+    /* justify-content: center; */
+    flex-direction: column;
+    
+}
+
+.container{
+    display: flex;
+    
+    width: 70vw;
+    height:50vh;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+   
+}
+
+textarea{
+    margin-top: 30px;
+    width:70vw;
+    height:40vh;
+    resize: none;
+    border-radius: 15px;
+    padding:10px;
+}
+
+.btns{
+    display: flex;
+    gap: 10px;
+    align-self: flex-start;
+    margin-top: 10px;
+}
+
+.btn-valider,.btn-reset{
+    padding: 10px 25px;
+    border:none;
+    border-radius: 15px;
+    color:white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+     font-size: 16px;
+}
+
+.btn-valider{
+    
+    align-self: flex-start;
+    background-color: green;
+   
+}
+.btn-reset{
+    background-color: red;
+}
+
+.answer{
+    display: flex;
+    justify-content: space-between;
+    width: 70vw;
+    gap:15px;
+}
+
+.box{
+    flex:1;
+    text-align: center;
+    padding: 15px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.box1 { background-color: purple; } 
+.box2 { background-color: #3498db; } 
+.box3 { background-color: pink; color: black; } 
+
+/* RESPONSIVE POUR TABLETTE  */
+@media screen and (max-width:1024px){
+
+    .container,.answer{
+        width:85vw;
+    }
+
+    .container{
+        height:85vh;
+    }
+
+    textarea{
+        width: 85vw;
+        height:30vh;
+    }
+    .answer{
+        gap: 15px;
+    }
+
+    /* .btns{
+        align-self: center;
+    } */
+
+    .btn-valider,.btn-reset{
+        padding: 10px 20px;
+        font-size:15px;
+    }
+}
+
+/* RESPONSIVE PORTABLE DE TAILLE MOYENNE  */
+@media screen and (max-width:768px){
+    h1{
+        font-size:20px;
+        margin-top: 15px;
+    }
+
+    textarea,.answser{
+        width: 90vw;
+    }
+
+    /* .container{
+        height:95vh;
+    } */
+
+    textarea{
+        height:65vh;
+        align-items: center;
+    }
+
+    .answer{
+        flex-direction: column;
+        /* align-items: center; */
+    }
+
+    .box{
+        
+        width:70vw;
+        padding: 12px;
+        font-size:13px;
+    }
+
+    .btns{
+        flex-direction: column;
+        width: 70vw;
+        /* align-items: center; */
+        /* align-self: flex-start; */
+    }
+
+    .btn-valider,.btn-reset{
+        width: 50vw;
+        font-size:13px;
+    }
+}
+
+/* PETIT PORTABLE  */
+@media screen and (max-width:480px){
+
+    textarea{
+        height:25vh;
+        font-size: 11px;
+    }
+
+    .btn-valider,.btn-reset{
+        /* width:100vw; */
+        padding: 10px;
+    }
+
+    .box{
+        font-size: 11px;
+    }
+}
