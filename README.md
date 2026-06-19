@@ -6,7 +6,7 @@ Un site simple et élégant permettant de compter le nombre de mots, de caractè
 - Compte le nombre total de **caractères (espaces compris)**
 - Bouton de **réinitialisation**
 - Inetrface **responsive**
--
+
 ## Technologies utilisés
 - **HTML5** - structure de la page
 - **CSS3** - Pour le design 
